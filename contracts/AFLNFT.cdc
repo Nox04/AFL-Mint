@@ -126,12 +126,12 @@ pub contract AFLNFT : NonFungibleToken {
 
         pub fun borrowNFT(id: UInt64): &NonFungibleToken.NFT {
 
-            return (&self.ownedNFTs[id] as &NonFungibleToken.NFT?)!
+            return &self.ownedNFTs[id] as &NonFungibleToken.NFT
         }
         
         pub fun borrowAFLNFT(id: UInt64): &AFLNFT.NFT? {
             if self.ownedNFTs[id] != nil {
-                let ref = (&self.ownedNFTs[id] as auth &NonFungibleToken.NFT?)!
+                let ref = &self.ownedNFTs[id] as auth &NonFungibleToken.NFT
                 return ref as! &AFLNFT.NFT
             }
             else{
