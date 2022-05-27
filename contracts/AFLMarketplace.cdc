@@ -1,7 +1,8 @@
-import FungibleToken from 0x0ae53cb6e3f42a79
-import NonFungibleToken from 0x01cf0e2f2f715450
-import AFLPack from 0x01cf0e2f2f715450
-import AFLNFT from 0x01cf0e2f2f715450
+
+import NonFungibleToken from "./NonFungibleToken.cdc"
+import FungibleToken from "./FungibleToken.cdc"
+import AFLPack from "./AFLPack.cdc"
+import AFLNFT from "./AFLNFT.cdc"
 
 pub contract AFLMarketplace {
      // emitted when a AFL moment is listed for sale

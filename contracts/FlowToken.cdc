@@ -1,4 +1,4 @@
-import FungibleToken from 0xee82856bf20e2aa6
+import FungibleToken from "./FungibleToken.cdc"
 
 pub contract FlowToken: FungibleToken {
 
@@ -196,3 +196,4 @@ pub contract FlowToken: FungibleToken {
         emit TokensInitialized(initialSupply: self.totalSupply)
     }
 }
+ 
